@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CaulySDK",
-            path: "Cauly.xcframework"
+            path: "CaulySDK.xcframework"
         )
     ]
 )

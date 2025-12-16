@@ -1,0 +1,21 @@
+// swift-tools-version: 5.8
+import PackageDescription
+
+let package = Package(
+    name: "CaulySPMTest",
+    platforms: [
+        .iOS(.v12)
+    ],
+    products: [
+        .library(
+            name: "CaulySDK",
+            targets: ["CaulySDK"]
+        )
+    ],
+    targets: [
+        .binaryTarget(
+            name: "CaulySDK",
+            path: "Cauly.xcframework"
+        )
+    ]
+)

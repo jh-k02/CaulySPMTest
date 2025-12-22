@@ -41,7 +41,6 @@ let package = Package(
                 // Optional(Weak)
                 .linkedFramework("EventKit", .weak),
                 .linkedFramework("AdSupport", .weak),
-                .linkedFramework("MessageUI", .weak),
             ]
         )
     ]

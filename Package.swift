@@ -37,10 +37,8 @@ let package = Package(
                 .linkedFramework("MediaPlayer"),
                 .linkedFramework("CFNetwork"),
                 .linkedFramework("MessageUI"),
-
-                // Optional(Weak)
-                .linkedFramework("EventKit", .weak),
-                .linkedFramework("AdSupport", .weak),
+                .linkedFramework("EventKit"),
+                .linkedFramework("AdSupport"),
             ]
         )
     ]

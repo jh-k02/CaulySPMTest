@@ -1,5 +1,5 @@
 // swift-tools-version: 5.8
-// 3.1.25
+// 3.1.27
 import PackageDescription
 
 let package = Package(
@@ -37,9 +37,11 @@ let package = Package(
                 .linkedFramework("SystemConfiguration"),
                 .linkedFramework("MediaPlayer"),
                 .linkedFramework("CFNetwork"),
-                .linkedFramework("MessageUI"),
-                .linkedFramework("EventKit"),
-                .linkedFramework("AdSupport"),
+                
+                // Optional(Weak)
+                .linkedFramework("EventKit", .weak),
+                .linkedFramework("AdSupport", .weak),
+                .linkedFramework("MessageUI", .weak),
             ]
         )
     ]

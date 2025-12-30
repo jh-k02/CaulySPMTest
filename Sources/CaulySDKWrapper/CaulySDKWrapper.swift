@@ -1,1 +1,2 @@
-// Empty file for SPM wrapper target
+// CaulySDKWrapper.swift
+@_exported import CaulySDK
